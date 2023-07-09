@@ -1,0 +1,89 @@
+.block-join-our {
+  .houzez_section_subtitle {
+    margin-left: rem(70px);
+  }
+
+  form.wpcf7-form {
+    .form-field-wrap {
+      display: flex;
+      justify-content: space-between;
+
+      .form-field {
+        flex: 1;
+
+        &:nth-of-type(2n+1) {
+          margin-right: rem(15px);
+        }
+
+        &:nth-of-type(2n+2) {
+          margin-left: rem(15px);
+        }
+      }
+
+      @include breakpoint(mobile) {
+        display: block;
+
+        .form-field {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+      }
+    }
+
+    .form-field {
+      margin-bottom: rem(15px);
+    }
+
+    .form-action {
+      position: relative;
+      text-align: center;
+
+      input[type="submit"] {
+        width: auto;
+        padding: rem(7px 40px);
+      }
+
+      .ajax-loader {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+// Block js-slide-carousel
+.js-slide-carousel {
+  .slick-list {
+    margin: rem(0 -10px);
+    overflow: hidden;
+  }
+
+  .slick-arrow {
+    background-color: transparent;
+    color: $color-label-resell;
+
+    &:before {
+      color: $color-label-resell;
+    }
+
+    &:hover {
+      &:before {
+        color: #fff;
+      }
+    }
+  }
+
+  .elementor-column {
+    .elementor-widget-wrap {
+      padding: rem(10px);
+    }
+  }
+}
+
+// Disable dialog lightbox footer
+.elementor-lightbox {
+  footer.elementor-lightbox-prevent-close {
+    display: none !important;
+  }
+}

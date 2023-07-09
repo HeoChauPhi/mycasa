@@ -1,0 +1,50 @@
+.property-form-wrap {
+  .wpcf7-form {
+    .form-group-textarea {
+      textarea {
+        max-height: rem(104px);
+      }
+    }
+
+    .privacy_policy {
+      .wpcf7-list-item {
+        margin: 0;
+
+        .wpcf7-list-item-label {
+          display: none;
+        }
+      }
+    }
+
+    .label-bold {
+      font-size: rem(13px);
+      font-weight: 700;
+    }
+
+    .form-hidden {
+      height: 0;
+      visibility: hidden;
+    }
+
+    .recaptcha {
+      display: block;
+      max-width: 100%;
+      overflow: hidden;
+
+      > div {
+        max-width: 100%;
+      }
+    }
+
+    .form-action {
+      position: relative;
+    }
+
+    .wpcf7-spinner {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.single-project,
+.single-property {
+  @include breakpoint(tinydevice) {
+    .bt-sidebar-wrap {
+      display: none !important;
+    }
+  }
+}
+
+.auto-complete {
+  .list-group-label,
+  .list-group-item > button {
+    font-size: rem(18px);
+    font-weight: 700;
+    padding: 10px 15px !important;
+    text-align: left;
+  }
+
+  .list-group-item {
+    > button {
+      background: transparent;
+      border: none;
+      padding: 0 !important;
+    }
+  }
+}

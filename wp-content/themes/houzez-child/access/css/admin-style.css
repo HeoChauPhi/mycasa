@@ -1,0 +1,10 @@
+.select2-selection__rendered {
+  min-width: 200px;
+}
+
+.acf-field[data-name=gallery_url] table .ui-sortable > tr:nth-of-type(1) > td.acf-field .acf-input-wrap:before {
+  color: red;
+  content: "Image display to List page";
+  font-size: 18px;
+  font-weight: 700;
+}

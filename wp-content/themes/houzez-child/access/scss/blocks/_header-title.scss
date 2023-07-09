@@ -1,0 +1,29 @@
+.header-title-bg-wrap {
+  text-align: center;
+
+  .houzez_section_title_wrap {
+    background-color: #fff;
+    display: inline-block;
+    padding: rem(35px 100px);
+
+    .houzez_section_title {
+      padding-right: rem(15px);
+    }
+
+    .houzez_section_subtitle {
+      padding-left: rem(60px);
+    }
+  }
+}
+
+.header-title-position-wrap {
+  .houzez_section_title_wrap {
+    .houzez_section_title {
+      padding-right: rem(15px);
+    }
+
+    .houzez_section_subtitle {
+      padding-left: rem(60px);
+    }
+  }
+}

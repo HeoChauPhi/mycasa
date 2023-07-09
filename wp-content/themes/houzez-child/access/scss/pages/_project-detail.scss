@@ -1,0 +1,164 @@
+.single-project {
+  #overlay-search-advanced-module {
+    display: none !important;
+  }
+
+  /* Layout Agent */
+  .agent-profile-wrap {
+    margin-top: 0;
+  }
+
+  .agent-profile-wrap {
+    .agent-image {
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .listing-wrap {
+    > h2 {
+      font-size: rem(18px);
+      margin-bottom: rem(20px);
+    }
+  }
+
+  .agent-contacts-wrap {
+    .agent-map {
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .featured-property-item-widget {
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  /* End Layout Agent */
+
+  /* Layout Project */
+  &.modal-open {
+    #main-wrap {
+      z-index: auto;
+    }
+  }
+
+  .project-wrap {
+    .property-banner {
+      .tab-pane {
+        height: auto;
+        padding: 0;
+
+        .project-gallery {
+          height: auto !important;
+        }
+      }
+    }
+  }
+
+  .project-title-wrap {
+    justify-content: space-between;
+  }
+
+  .project-gallery {
+    &-item {
+      .swipebox {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        line-height: 0;
+        padding-top: calc(529 / 789 * 100%);
+      }
+    }
+  }
+
+  .top-gallery-section {
+    position: static !important;
+
+    .lSPager {
+      > li {
+        > a {
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: block;
+          height: rem(70px);
+          line-height: 0;
+
+          > img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .block-content-wrap {
+    * {
+      max-width: 100%;
+    }
+  }
+
+  .block-project-doc-wrap {
+    .project-doc-list {
+      li {
+        margin-top: rem(10px);
+
+        &:first-of-type {
+          margin: 0;
+        }
+      }
+
+      a {
+        display: block;
+      }
+
+      i {
+        font-size: rem(24px);
+        margin-right: rem(10px);
+      }
+    }
+  }
+
+  .mortgage-calculator-monthly-payment-wrap {
+    left: 50%;
+    margin: 0 auto;
+    max-width: rem(200px);
+    transform: translateX(-50%);
+  }
+
+  .video-url-wrap {
+    .popup-video {
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .similar-listing {
+    .item-listing-wrap {
+      .item-header {
+        .item-tools {
+          position: absolute;
+          bottom: rem(20px);
+          right: rem(20px);
+        }
+
+        .listing-image-wrap {
+          .background-image {
+            height: rem(250px);
+          }
+        }
+      }
+    }
+  }
+  /* End Layout Project */
+}

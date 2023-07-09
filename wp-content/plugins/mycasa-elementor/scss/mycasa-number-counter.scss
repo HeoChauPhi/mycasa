@@ -1,0 +1,85 @@
+.mycasa-elementor-number-counter {
+  .heading-wrap {
+    margin-bottom: 80px;
+  }
+
+  .mycasa-elementor-heading-title {
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .mycasa-elementor-sub-title {
+    margin: -12px 12% 0 12%;
+    position: relative;
+    text-align: right;
+    white-space: nowrap;
+
+    &:before {
+      background-color: #818181;
+      content: "";
+      height: 4px;
+      left: 0;
+      position: absolute;
+      top: calc(50% - 2px);
+      width: calc(100% - 232px);
+    }
+  }
+
+  .number-counter-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .number-counter-item {
+    border-left: 1px solid #818181;
+    flex: 1;
+    padding: 10px;
+
+    &:first-of-type {
+      border: none;
+    }
+
+    .number-counter-title-wrap {
+      font-size: 62px;
+      font-weight: 500;
+    }
+
+    .number-counter-description {
+      font-size: 17px;
+      padding: 0 20%;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .mycasa-elementor-heading-title {
+      font-size: 70px !important;
+    }
+
+    .number-counter-item {
+      .number-counter-title-wrap {
+        font-size: 40px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 769px) {
+    .mycasa-elementor-heading-title {
+      font-size: 45px !important;
+    }
+
+    .number-counter-list {
+      display: block;
+    }
+
+    .number-counter-item {
+      border-left: none;
+      border-top: 1px solid #818181;
+
+      .number-counter-title-wrap {
+        font-size: 25px;
+      }
+    }
+  }
+}

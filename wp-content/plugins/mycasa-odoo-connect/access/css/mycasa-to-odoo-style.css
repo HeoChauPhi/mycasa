@@ -1,0 +1,74 @@
+.batch-process-progress-bar {
+  overflow: hidden;
+}
+
+.odoo-setting-form .odoo-setting-form-action {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 0;
+}
+
+.odoo-setting-form p.submit {
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+.odoo-setting-form .odoo-verify-message {
+  color: #dc3545;
+  margin-left: 10px;
+}
+
+.odoo-setting-form .odoo-verify-message.success {
+  color: #28a745;
+}
+
+.month-picker-open-button,
+.mycasa-form-datepicker-clear {
+  cursor: pointer;
+  margin: 0 0 0 10px;
+  min-height: 30px;
+  min-width: 30px;
+  padding: 0 8px;
+}
+
+.odoo-getting-data-actions {
+  margin-bottom: 20px;
+}
+
+.odoo-getting-data-actions button {
+  margin-right: 10px !important;
+}
+
+.odoo-getting-data-log {
+  border: 1px solid #c3c4c7;
+  display: block;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.odoo-getting-data-log code {
+  display: block;
+  margin-top: 3px;
+}
+
+.odoo-getting-data-log code:first-of-type {
+  margin-top: 0;
+}
+
+.odoo-getting-data-log .log-error {
+  color: #dc3545;
+}
+
+.odoo-getting-data-log .log-success {
+  color: #28a745;
+}
+
+.odoo-remove-data-actions {
+  margin-bottom: 30px;
+}
+
+.remove-action-heading {
+  margin: 0 0 7px;
+}

@@ -1,0 +1,55 @@
+.single-property {
+  &.modal-open {
+    #main-wrap {
+      z-index: auto;
+    }
+  }
+
+  .top-gallery-section {
+    .listing-slider-variable-width {
+      overflow: hidden;
+    }
+  }
+
+  .property-overview-wrap {
+    .property-overview-data {
+      .list-unstyled {
+        @include breakpoint(mobile) {
+          display: block;
+          width: 100%;
+        }
+
+        .property-overview-item {
+          white-space: normal;
+        }
+      }
+    }
+  }
+  
+  .property-detail-wrap {
+    .detail-wrap {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+  }
+
+  .mortgage-calculator-monthly-payment-wrap {
+    left: 50%;
+    margin: 0 auto;
+    max-width: rem(200px);
+    transform: translateX(-50%);
+  }
+
+  .property-review-wrap {
+    @include breakpoint(tinydevice) {
+      #property-review-form {
+        display: none;
+
+        &.mobile-property-review-show {
+          display: block;
+        }
+      }
+    }
+  }
+}

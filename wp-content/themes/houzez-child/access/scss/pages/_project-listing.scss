@@ -1,0 +1,63 @@
+.page-template-project-listing {
+  #overlay-search-advanced-module {
+    display: none !important;
+  }
+}
+
+.item-listing-wrap {
+  .item-wrap-button {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+
+    .list-item-features {
+      flex: 1;
+      margin-right: rem(10px);
+    }
+
+    > a.btn {
+      position: static;
+    }
+  }
+}
+
+.project-search-nav {
+  #auto_complete_ajax {
+    .d-flex {
+      display: flex !important;
+    }
+  }
+
+  .advanced-search-filters {
+    .control--checkbox {
+      color: white;
+      margin-top: rem(10px);
+    }
+  }
+
+  .form-hidden {
+    clip: rect(0,0,0,0);
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+  }
+
+  .project-price-range-wrap {
+    input.range-input {
+      display: none;
+    }
+  }
+}
+
+.filter-by {
+  margin-right: rem(30px);
+
+  .form-control,
+  .btn-light.dropdown-toggle {
+    padding: rem(0 2px);
+    border-color: transparent !important;
+    background-color: transparent !important;
+  }
+}

@@ -1,0 +1,37 @@
+.mycasa-elementor-multiple-shortcode {
+  .heading-wrap {
+    margin-bottom: -70px;
+    text-align: center;
+  }
+
+  .heading-inner {
+    background-color: #fff;
+    display: inline-block;
+    padding: 35px 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mycasa-elementor-sub-title {
+    text-align: right;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .heading-wrap {
+      margin-bottom: 0;
+    }
+
+    .heading-inner {
+      display: block;
+      padding: 25px;
+    }
+
+    .mycasa-elementor-heading-title {
+      padding: 0 !important;
+    }
+
+    .mycasa-elementor-sub-title {
+      text-align: center;
+    }
+  }
+}

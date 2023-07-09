@@ -1,0 +1,14 @@
+.mycasa-elementor-career-listing .career-item .career-information {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.mycasa-elementor-career-listing .career-item .field-career {
+  padding: 0 5px;
+}
+.mycasa-elementor-career-listing .career-item .field-career-wage .field-value {
+  font-weight: 500;
+}
+.mycasa-elementor-career-listing .career-item .career-read-more > a {
+  white-space: nowrap;
+}

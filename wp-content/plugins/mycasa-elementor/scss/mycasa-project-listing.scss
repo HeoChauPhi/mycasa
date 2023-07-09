@@ -1,0 +1,334 @@
+.mycasa-elementor-project-listing {
+  .project-listing {
+    overflow: hidden;
+  }
+
+  .heading-wrap {
+    padding-right: 30px;
+
+    .mycasa-elementor-heading-title {
+      font-weight: 500;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .mycasa-elementor-sub-title {
+      margin-bottom: 20px;
+      margin-top: -15px;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .mycasa-elementor-heading-link {
+      display: inline-block;
+      float: right;
+      letter-spacing: 4px;
+      position: relative;
+
+      &:after {
+        background-color: #B3B3B3;
+        content: "";
+        height: 1px;
+        left: -23px;
+        position: absolute;
+        top: 50%;
+        width: 46px;
+      }
+    }
+  }
+
+  .custom-links {
+    .list-custom-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .custom-link-item {
+      > a {
+        display: block;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+
+  .project-listing--item {
+    float: left;
+    margin-bottom: 1px;
+    position: relative;
+
+    .project-item--image {
+      min-height: 280px;
+    }
+
+    &:hover {
+      .project-item-content {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .project-item-content-hover {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .project-item--image {
+        &.img-grayscale {
+          filter: grayscale(0);
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &:nth-of-type(9n+1),
+    &:nth-of-type(9n+4),
+    &:nth-of-type(9n+9) {
+      width: 32%;
+    }
+
+    &:nth-of-type(9n+2),
+    &:nth-of-type(9n+8) {
+      width: 28%;
+    }
+
+    &:nth-of-type(9n+3),
+    &:nth-of-type(9n+7) {
+      width: 40%;
+    }
+
+    &:nth-of-type(9n+5),
+    &:nth-of-type(9n+6) {
+      width: calc(68% / 2);
+      margin-top: -40px;
+    }
+
+    &:nth-of-type(9n+2),
+    &:nth-of-type(9n+5),
+    &:nth-of-type(9n+8) {
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+
+    &:nth-of-type(9n+4),
+    &:nth-of-type(9n+7),
+    &:nth-of-type(9n+1) {
+      clear: both;
+    }
+
+    &.heading-wrap {
+      min-height: 320px;
+      padding-top: 60px;
+    }
+
+    &:nth-of-type(9n+1) {
+      .project-item--image {
+        min-height: 320px;
+      }
+    }
+
+    &:nth-of-type(9n+5),
+    &:nth-of-type(9n+6) {
+      .project-item--image {
+        min-height: 300px;
+      }
+    }
+
+    &:nth-of-type(9n+4) {
+      .project-item--image {
+        min-height: 260px;
+      }
+    }
+
+    &.custom-links {
+      padding-top: 50px;
+      padding-left: 40px;
+
+      .project-listing--item-inner {
+        overflow: visible;
+      }
+    }
+  }
+
+  .project-listing--item-inner {
+    overflow: hidden;
+  }
+
+  .project-item--image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.img-grayscale {
+      filter: grayscale(100%);
+      transition: all .3s;
+    }
+  }
+
+  .project-item-content,
+  .project-item-content-hover {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%);
+    align-items: baseline;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .project-item-content {
+    color: #fff;
+    padding: 50px 30px 20px 30px;
+    transition: all .5s;
+  }
+
+  .project-item-content-hover {
+    align-items: flex-end;
+    opacity: 0;
+    transition: all .5s;
+    visibility: hidden;
+
+    .project-item-title {
+      background-color: #fff;
+      color: #1b1b1b;
+      flex: 1;
+      padding: 10px;
+    }
+
+    > a {
+      background-color: #1b1b1b;
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 4px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  .project-item-price {
+    flex: 1;
+    text-align: right;
+  }
+
+  .project-item-title {
+    padding-left: 30px;
+  }
+
+  .list-custom-links {
+    .custom-link-item {
+      margin-bottom: 10px;
+
+      > a {
+        position: relative;
+
+        &:after {
+          background-color: #B3B3B3;
+          content: "";
+          height: 1px;
+          left: -23px;
+          position: absolute;
+          top: 50%;
+          width: 46px;
+        }
+      }
+    }
+  }
+
+  .mask-link {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mycasa-elementor-project-listing {
+    .project-listing--item {
+      clear: none !important;
+      margin: 0 0 1px 0 !important;
+      padding: 0 1px 0 0 !important;
+      width: 50% !important;
+    
+      &.heading-wrap {
+        float: none;
+        margin: 0 auto 30px auto !important;
+        min-height: auto;
+        padding: 0 !important;
+      }
+
+      &.custom-links {
+        padding: 50px 0 0 40px !important;
+      }
+
+      .project-item--image {
+        min-height: 280px !important;
+      }
+
+      &:nth-of-type(9n+2) {
+        clear: both !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mycasa-elementor-project-listing {
+    .project-listing--item {
+      &.heading-wrap {
+        width: 100% !important;
+        text-align: center;
+
+        .mycasa-elementor-heading-title,
+        .mycasa-elementor-sub-title {
+          text-align: center;
+        }
+
+        .mycasa-elementor-heading-link {
+          float: none;
+        }
+      }
+    }
+  }
+}
+
+// Popup form
+#popup-form-deposit {
+  &.show {
+    background-color: rgba(0,0,0,.5);
+    bottom: 0;
+    left: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999;
+  }
+
+  > .elementor-container {
+    margin: 5rem auto;
+    padding: 0 30px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+  }
+
+  .popup-form-deposit-close {
+    i[class*="fa"] {
+      cursor: pointer;
+    }
+  }
+}
+
+// Override modal overlay
+.modal-backdrop.show {
+  z-index: 0 !important;
+}

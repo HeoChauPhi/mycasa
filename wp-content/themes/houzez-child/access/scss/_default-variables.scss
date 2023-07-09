@@ -1,0 +1,29 @@
+$base-font-size: 16px !default;
+
+// Color
+$red: #941404;
+$blue: #00aeff;
+$aqua: #f5f9fc;
+$slategray: #5d6e82;
+
+$gray: #dce0e0;
+$gray-99: #999;
+
+$color-primary: $blue;
+$color-secondary: $red;
+
+$color-link: $color-secondary;
+$color-link-hover: darken($color-secondary, 15%);
+$color-heading: $slategray;
+$color-line: $gray;
+$color-light: $gray-99;
+
+$bg-light: $aqua;
+
+// Color Label taxonomies
+$color-label-resell: rgba(darken($color-link-hover, 25%), 0.8);
+$color-label-lease: rgba($slategray, 0.8);
+
+// Color Icons
+$color-txt: #8BC6D6;
+$color-pdf: #CE4123;

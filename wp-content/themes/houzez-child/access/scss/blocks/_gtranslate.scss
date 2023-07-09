@@ -1,0 +1,21 @@
+#translate-switch {
+  bottom: 0;
+  display: flex;
+  position: fixed !important;
+  right: 7%;
+  z-index: 9;
+
+  .switcher {
+    width: rem(210px);
+  }
+
+  .selected,
+  .option {
+    width: auto;
+
+    > a {
+      width: auto;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.block-career-contact-us {
+  > .elementor-widget-wrap {
+    > .elementor-element {
+      margin-bottom: 0;
+    }
+  }
+
+  .elementor-icon-box-wrapper {
+    align-items: center !important;
+  }
+
+  .elementor-icon-box-icon {
+    > a {
+      background-color: #fff;
+      border-radius: rem(500px);
+      padding: rem(15px);
+    }
+  }
+}

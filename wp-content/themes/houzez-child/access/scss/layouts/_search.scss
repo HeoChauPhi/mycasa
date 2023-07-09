@@ -1,0 +1,72 @@
+.header-mobile {
+  .toggle-button-search {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.advanced-search-nav {  
+  @include breakpoint(smalldevice) {
+    display: none !important;
+
+    &.advanced-search-nav-show {
+      display: block !important;
+    }
+
+    .advanced-search-v1,
+    .advanced-search-filters {
+      .d-flex {
+        display: inline-block !important;
+        width: 100%;
+      }
+
+      .flex-search,
+      .fields-width {
+        width: 49%;
+        padding: 0;
+        margin-bottom: rem(10px);
+
+        &:nth-of-type(2n+2) {
+          float: left;
+        }
+
+        &:nth-of-type(2n+1) {
+          float: right;
+        }
+      }
+    }
+
+    .advanced-search-v1 {
+      > .d-flex {
+        > div:first-of-type {
+          float: none;
+          width: 100% !important;
+        }  
+      }
+    }
+
+    .features-list {
+      .control {
+        width: 33%;
+      }
+    }
+  }
+}
+
+.houzez-search-form-js {
+  .hidden-search-ajax {
+    align-items: center;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: rem(40px);
+    z-index: 1;
+  }
+}

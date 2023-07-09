@@ -1,0 +1,47 @@
+.loan-calculator {
+  display: none;
+
+  &.show {
+    bottom: 0;
+    left: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999;
+
+    .loan-calculator-inner {
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      margin: 0 auto;
+      max-width: rem(1140px);
+      position: relative;
+    }
+
+    .loan-calculator-table {
+      background-color: #fff;
+      flex: 1;
+      max-height: calc(100vh - 30%);
+      overflow-y: auto;
+      padding: rem(20px);
+      position: relative;
+    }
+
+    .popup-close {
+      cursor: pointer;
+      font-size: rem(24px);
+      position: absolute;
+      right: rem(20px);
+      top: calc(15% + 10px);
+      z-index: 9;
+    }
+  }
+
+  thead,
+  tfoot {
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}

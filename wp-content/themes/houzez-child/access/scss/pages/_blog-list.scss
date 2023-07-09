@@ -1,0 +1,59 @@
+.page-template-blog-grid-2cols {
+  .block-category-search {
+    .block-category {
+      .list-category {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .category-term {
+        list-style: none;
+        margin-bottom: rem(10px);
+
+        a {
+          align-items: center;
+          display: flex;
+          font-size: rem(18px);
+          justify-content: space-between;
+
+          &:hover {
+            color: $color-link-hover;
+          }
+
+          .dashed-line {
+            border-top: rem(1px) dashed #dce0e0;
+            flex: 1;
+            margin: rem(0 10px);
+          }
+        }
+
+        &.category-term-active {
+          a {
+            color: $color-link-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .blog-post-item {
+    .blog-post-thumb {
+      overflow: hidden;
+      padding-top: 63%;
+      position: relative;
+
+      > a {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

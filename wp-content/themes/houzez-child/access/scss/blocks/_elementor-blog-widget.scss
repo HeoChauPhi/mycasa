@@ -1,0 +1,23 @@
+.elementor-widget-houzez_elementor_blog_posts {
+  .blog-posts-module-v1 {
+    .blog-post-thumb,
+    .blog-post-thumb-bg {
+      overflow: hidden;
+      padding-top: 70%;
+      position: relative;
+
+      > a {
+        line-height: 0;
+        overflow: hidden;
+      }
+
+      > * {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}

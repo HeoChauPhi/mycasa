@@ -1,0 +1,60 @@
+{
+    "key": "group_617df7b21f942",
+    "title": "Group Fields for Post Member",
+    "fields": [
+        {
+            "key": "field_617df7cc98508",
+            "label": "Properties for Agent",
+            "name": "properties_for_agent",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "member_type:agent"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "member_type:team-member"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1635645575
+}
